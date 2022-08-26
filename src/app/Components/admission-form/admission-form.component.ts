@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmissionFormComponent implements OnInit {
 
+  title="fill the details below";
+
   admissionForm=
   {
     name:"",
@@ -22,13 +24,12 @@ export class AdmissionFormComponent implements OnInit {
 
   save()
   {
-    console.log(this.admissionForm.name+" "+
-    this.admissionForm.pare+" "+
-    this.admissionForm.age+" "+
-    this.admissionForm.Dob+" "+
-    this.admissionForm.qualification+" "+
-    this.admissionForm.name+" "+
-    )
+    console.log("Candidate Name"+this.admissionForm.name+" "+
+    "Parent Name"+ this.admissionForm.parentsName+" "
+    +"Age"+ this.admissionForm.age+" "+
+    "Date Of Birth"+this.admissionForm.Dob+" "+
+    "Qualification"+this.admissionForm.qualification+" "+
+    "Email"+this.admissionForm.email);
   }
 
 

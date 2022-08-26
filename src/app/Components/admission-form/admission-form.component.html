@@ -1,1 +1,54 @@
-<p>admission-form works!</p>
+
+
+<h1>
+    Fill all the fields below
+</h1>
+
+<span>{{title}}</span>
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+      <input type="text"   class="form-control" placeholder="name"
+      [(ngModel)]=admissionForm.name aria-label="name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="parentsName"
+      [(ngModel)]=admissionForm.parentsName aria-label="parentsName">
+    </div>
+
+    <div class="col">
+        <input type="number" class="form-control" placeholder="age"
+        [(ngModel)]=admissionForm.age aria-label="age">
+      </div>
+
+      <div class="col">
+        <input type="text"   class="form-control" placeholder="Dob"
+        [(ngModel)]=admissionForm.Dob aria-label="Dob">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="qualification"
+        [(ngModel)]=admissionForm.qualification aria-label="qualification">
+      </div>
+  
+      <div class="col">
+        <input type="text" class="form-control" placeholder="email"
+        [(ngModel)]=admissionForm.email aria-label="email">
+      </div>
+
+      
+
+  </div>
+
+  <br>
+  <br>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button" (click)="save()">Save User</button>
+ 
+  </div>
+
+  
